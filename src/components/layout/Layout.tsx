@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Meta } from ".";
+import { Meta } from "./Meta";
 import Navbar from "../navigation/Navbar";
 
 

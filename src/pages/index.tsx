@@ -1,12 +1,5 @@
-import OurValue from '@/components/home/OurValue'
-import Slider from '@/components/home/Slider'
-import WhyChooseUs from '@/components/home/WhyChooseUs'
-import Layout from '@/components/layout/Layout'
-
-import Image from 'next/image'
-// import { Inter } from 'next/font/google'
-
-// const inter = Inter({ subsets: ['latin'] })
+import { Layout, Metrics, OurValue, Slider, WhyChooseUs } from '@/components'
+import { TeachersAndFacilities } from '@/components/home'
 
 export default function Home() {
   return (
@@ -17,6 +10,8 @@ export default function Home() {
         </div>
         <WhyChooseUs />
         <OurValue />
+        <Metrics />
+        <TeachersAndFacilities />
       </>
 
     </Layout>

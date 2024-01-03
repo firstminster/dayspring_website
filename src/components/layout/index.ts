@@ -1,2 +1,3 @@
-export * from "./Layout";
-export * from "./Meta";
+import Layout from './Layout'
+
+export { Layout }
