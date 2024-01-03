@@ -7,7 +7,7 @@ import CallToAction from './CallToAction'
 import ParentsReview from './ParentsReview'
 import StudentReview from './StudentReview'
 import BlogList from './BlogList'
-import UpcomingEvents from './UpcomingEvents'
+// import UpcomingEvents from '../UpcomingEvents'
 
 
-export { Slider, OurValue, WhyChooseUs, Metrics, TeachersAndFacilities, ParentsReview, StudentReview, BlogList, UpcomingEvents, CallToAction }
+export { Slider, OurValue, WhyChooseUs, Metrics, TeachersAndFacilities, ParentsReview, StudentReview, BlogList, CallToAction }
