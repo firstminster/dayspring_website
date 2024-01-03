@@ -147,8 +147,6 @@ const Slider = () => {
                                 // slider-content
                                 <div className="flex flex-col lg:flex-row items-center justify-center">
                                     <StdImage
-                                        // placeholderSrc="bulb-sticker"
-                                        // effect="blur" // opacity | black-and-white
                                         src={sticker3}
                                         alt="bulb"
                                         width={80.81}
@@ -156,8 +154,6 @@ const Slider = () => {
                                         className="hidden xl:block xl:relative top-[-13rem] left-[78rem] w-[80.81px] h-[95.3px] animate-fade-in-left"
                                     />
                                     <StdImage
-                                        // placeholderSrc="books-sticker"
-                                        // effect="blur" // opacity | black-and-white
                                         src={sticker4}
                                         alt="books"
                                         width={93.03}
@@ -176,7 +172,7 @@ const Slider = () => {
                                         </p>{" "}
                                         <Link
                                             href="/about"
-                                            className="absolute top-[45rem] inset-y-0 lg:static flex items-center text-black justify-center bg-white w-[238px] h-[49px] px-[55.5px] py-[14px] mt-[35px] rounded-full border hover:border-medium-orchid hover:text-medium-orchid transition-all duration-300 ease-out animate-fade-in-up lg:animate-none"
+                                            className="absolute top-[45rem] inset-y-0 lg:static flex items-center text-black justify-center bg-white w-[238px] h-[49px] px-[55.5px] py-[14px] mt-[35px] rounded-full border hover:border-medium-orchid hover:text-medium-orchid transition-all duration-300 ease-out animate-fade-in-left lg:animate-none"
                                         >
                                             <span className="mr-[11px] text-lg"> Learn More</span>
                                             <FaArrowRight className="w-[13.54px] h-[11.89px]" />
@@ -184,8 +180,6 @@ const Slider = () => {
                                     </div>
                                     {/* content-image */}
                                     <StdImage
-                                        // placeholderSrc="little-girl-pics"
-                                        // effect="blur" // opacity | black-and-white
                                         src={image}
                                         alt="little-girl"
                                         width={289}
@@ -194,8 +188,6 @@ const Slider = () => {
                                     />
 
                                     <StdImage
-                                        // placeholderSrc="globe-sticker"
-                                        // effect="blur" // opacity | black-and-white
                                         src={sticker2}
                                         alt="globe"
                                         width={115}
@@ -204,8 +196,6 @@ const Slider = () => {
                                     />
 
                                     <StdImage
-                                        // placeholderSrc="calculator-sticker"
-                                        // effect="blur" // opacity | black-and-white
                                         src={sticker1}
                                         alt="calculator"
                                         width={85.75}
