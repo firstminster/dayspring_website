@@ -1,5 +1,4 @@
-import { Layout, Metrics, OurValue, Slider, WhyChooseUs } from '@/components'
-import { TeachersAndFacilities } from '@/components/home'
+import { Layout, Metrics, OurValue, Slider, WhyChooseUs, TeachersAndFacilities, CallToAction, ParentsReview, StudentReview, BlogList, UpcomingEvents } from '@/components'
 
 export default function Home() {
   return (
@@ -12,6 +11,11 @@ export default function Home() {
         <OurValue />
         <Metrics />
         <TeachersAndFacilities />
+        {/* <ParentsReview />
+        <StudentReview />
+        <BlogList />
+        <UpcomingEvents /> */}
+        <CallToAction />
       </>
 
     </Layout>
