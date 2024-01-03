@@ -2,6 +2,11 @@
 // Logo
 import LogoBlue from './images/logo/dayspring-logo-blue.png'
 import LogoBlueBg from './images/logo/dayspring-logo-blue-bg.png'
+// Team
+import Team1 from './images/team/director.jpeg'
+import Team2 from './images/team/onuoha.jpeg'
+import Team3 from './images/team/leonard.jpeg'
+import Team4 from './images/team/favour.jpeg'
 // Hero
 import Hero1 from './images/hero/Hero1.png'
 import Hero2 from './images/hero/Hero2.png'
@@ -29,5 +34,5 @@ import BallFlag from './images/stickers/ballFlag.png'
 import Stationary from './images/stickers/stationary.png'
 
 export {
-    LogoBlue, LogoBlueBg, Hero1, Hero2, Hero3, Hero4, Hero5, HeroGradientBg, Facility, SecStudentLaptop, Teacher, PriPupilGroup, Books, Bulb, Calculator, Globe, AcademicCompetence, Discipline, FacilityArrow, LeaderShip, TeacherArrow, BallFlag, Stationary
+    LogoBlue, LogoBlueBg, Team1, Team2, Team3, Team4, Hero1, Hero2, Hero3, Hero4, Hero5, HeroGradientBg, Facility, SecStudentLaptop, Teacher, PriPupilGroup, Books, Bulb, Calculator, Globe, AcademicCompetence, Discipline, FacilityArrow, LeaderShip, TeacherArrow, BallFlag, Stationary
 }

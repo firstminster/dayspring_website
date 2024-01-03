@@ -1,4 +1,4 @@
-import { CallToAction, Layout, OurMission, OurValue } from '@/components'
+import { CallToAction, Layout, OurMission, OurValue, Team } from '@/components'
 import { HeaderIntro } from '@/components/common'
 import React from 'react'
 import { BallFlag, PriPupilGroup, Stationary } from '../../../public/assets'
@@ -17,6 +17,7 @@ const AboutPage = () => {
                     sticker2={BallFlag} />
                 <OurMission />
                 <OurValue />
+                <Team />
                 <CallToAction />
             </div>
         </Layout>

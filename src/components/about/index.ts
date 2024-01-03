@@ -1,4 +1,5 @@
 import OurMission from './OurMission'
+import Team from './Team'
 
 
-export { OurMission }
+export { OurMission, Team }

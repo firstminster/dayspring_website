@@ -1,0 +1,536 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font style imports [Work Sans] */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* React-slick-carousel css import */
+/* @import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css"; */
+
+*,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* font-family: "Inter", sans-serif; */
+}
+
+/* Navigation mobile menu-bar */
+.nav-menu {
+  @apply h-[390px] w-[183px] lg:h-auto lg:w-auto lg:static lg:flex flex-col p-4 mt-4 z-30 bg-white rounded-b-[10px] border border-gray-100 lg:flex-row space-y-[22px] lg:space-y-0 lg:space-x-9 md:mt-0 text-lg lg:text-[15px] xl:text-lg md:font-normal lg:border-0 lg:bg-transparent absolute -right-52 hidden top-[59px] md:top-[75px] transition-all duration-500 ease-in-out;
+}
+
+/* CSS Document */
+
+/* 
+*
+*
+[Table of contents]
+*
+*
+*
+
+  color / $white
+  font / @import 
+  general / html
+  dropdown / .dropdown-custom.btn
+  navbar / .navbar
+  slider home / .jumbomain
+  breadcumb / .breadcumb
+  home / .subheading
+  slickteam / .slickteam
+  pricing / .pricelist
+  testimony / .wraper-testimony
+  footer / footer
+  portofolio / AppContainer
+  contact / .form-side
+  service / #service
+  blog / #blog
+  media all / @media only screen and (max-width: 1199px)
+
+*/
+
+/*color*/
+$white: #fff;
+$gray: #bbb;
+$black: #111;
+$black_soft: #272727;
+$black_col: #2e333c;
+$black_more: #0f0f0f;
+$color: #149af6;
+$color_more: #c7ab5a;
+
+// react-slick parameters
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+$primary: #0d2f3f;
+$secondary: #286f6c;
+$secondary-white: #e7e7e7;
+
+/* general */
+html {
+  scroll-behavior: smooth;
+}
+
+#mainpreloader {
+  .preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: transparent;
+    background: #fff;
+    z-index: 9999999;
+    -webkit-animation-duration: 1.6s;
+    animation-duration: 1.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+  }
+}
+.mainpreloader {
+  position: relative;
+  animation: rotate 1s infinite linear;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  width: 60px;
+  height: 60px;
+  margin-right: -24px;
+  border-radius: 999px;
+}
+.mainpreloader span {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 3px solid transparent;
+  border-top: 3px solid #149af6;
+  top: -3px;
+  left: -3px;
+  border-radius: 999px;
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#routerhang {
+  transform: unset !important;
+  transform-origin: unset !important;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/*slickteam*/
+.slickteam {
+  width: 100%;
+  position: relative;
+  padding: 30px 0 0;
+  .slick-prev {
+    opacity: 0;
+    left: -20px;
+    z-index: 1;
+    transition: all 0.3s ease;
+    &::before {
+      content: "\f053" !important;
+      font-family: FontAwesome !important;
+      font-style: normal;
+      font-weight: normal;
+      color: #000;
+    }
+  }
+  .slick-next {
+    right: -20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    &::before {
+      content: "\f054" !important;
+      font-family: FontAwesome !important;
+      font-style: normal;
+      font-weight: normal;
+      color: #000;
+    }
+  }
+  .slick-slide {
+    position: relative;
+    div {
+      margin: 0 5px;
+      .itm {
+        margin: 0;
+        position: relative;
+        height: 100%;
+        outline: none;
+        overflow: hidden;
+        .bg {
+          position: relative;
+          overflow: hidden;
+          border-radius: 20px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            min-height: 380px;
+            object-fit: cover;
+          }
+          &:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to top, #000, rgba(0, 0, 0, 0.3));
+            opacity: 0.5;
+            transition: all 0.3s ease;
+          }
+        }
+        .desc {
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          text-align: left;
+          color: #fff;
+          .name {
+            font-weight: 500;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+          }
+          .title {
+            font-weight: 400;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            transition: all 0.3s ease;
+          }
+        }
+        .icon {
+          width: 100%;
+          position: absolute;
+          text-align: right;
+          right: 15px;
+          bottom: -30px;
+          transition: all 0.3s ease;
+          span {
+            width: 100%;
+            height: auto;
+            color: inherit;
+            padding: 10px;
+            i {
+              transition: all 0.3s ease;
+            }
+            &:hover {
+              i {
+                transform: scale(1.3);
+              }
+            }
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          .bg:before {
+            opacity: 0.8;
+            background: linear-gradient(to top, #000, rgba(0, 0, 0, 0.3));
+            transition: all 0.3s ease;
+          }
+          .icon {
+            bottom: 15px;
+            transition: all 0.3s ease;
+          }
+          .title {
+            line-height: 0.9;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+    }
+    &.slick-col {
+      display: block;
+      overflow: hidden;
+      div .itm .bg img {
+        min-height: 300px !important;
+      }
+    }
+  }
+  &:hover {
+    .slick-prev,
+    .slick-next {
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+/*slick-review*/
+.slickreview {
+  width: 100%;
+  position: relative;
+  // padding: 30px 0 0;
+  .slick-prev {
+    opacity: 0;
+  }
+  .slick-next {
+    opacity: 0;
+  }
+  .slick-slide {
+    position: relative;
+    div {
+      margin: 5px 5px;
+      .itm {
+        // margin: 0;
+        position: relative;
+        height: 100%;
+        outline: none;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+// react-slick styling
+.bg-primary {
+  background: #f8f7f1;
+}
+
+.innerWidth {
+  @media (min-width: $xxl) {
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  width: 100%;
+}
+
+.paddings {
+  @media (min-width: $sm) {
+    padding: 4rem;
+  }
+
+  @media (min-width: $xl), (min-width: $md) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.xPaddings {
+  @media (min-width: $sm) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  padding-left: 1.5rem;
+  /* 24px */
+  padding-right: 1.5rem;
+  /* 24px */
+}
+
+.yPaddings {
+  @media (min-width: $sm) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: $xl) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.topPaddings {
+  @media (min-width: $sm) {
+    padding-top: 4rem;
+  }
+
+  @media (min-width: $xl) {
+    padding-top: 2rem;
+  }
+
+  padding-top: 3rem;
+}
+
+.bottomPaddings {
+  @media (min-width: $sm) {
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: $xl) {
+    padding-bottom: 2rem;
+  }
+
+  padding-bottom: 3rem;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// .flexStart {
+//   display: flex;
+//   justify-content: start;
+//   align-items: center;
+// }
+
+.flexEnd {
+  display: flex;
+  justify-items: end;
+}
+
+.primaryText {
+  @media (max-width: $sm) {
+    font-size: 2.5rem;
+  }
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.secondaryText {
+  @media (max-width: $sm) {
+    font-size: 1.1rem;
+    line-height: 40px;
+  }
+  line-height: 50px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+// footer
+#scroll-to-top {
+  cursor: pointer;
+  width: max-content;
+  height: max-content;
+  position: fixed;
+  right: 10px;
+  z-index: 999;
+  &.init {
+    bottom: -60px;
+    transition: all 0.3s ease;
+  }
+  &.show {
+    bottom: 15px;
+    transition: all 0.3s ease;
+  }
+  div {
+    font-size: 0.8rem;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 30px;
+    background: $color;
+    transition: all 0.3s ease;
+    &:hover {
+      background: #b14aed;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+/*** media all ***/
+@media only screen and (max-width: 1024px) {
+  /*slickteam*/
+  .slickteam {
+    .slick-prev {
+      left: 10px;
+      &::before {
+        color: #fff;
+      }
+    }
+    .slick-next {
+      right: 10px;
+      &::before {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
