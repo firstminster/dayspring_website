@@ -14,6 +14,7 @@ import HeroGradientBg from './images/pattern/Hero-gradient-bg.png'
 import Facility from './images/people/facility.png'
 import SecStudentLaptop from './images/people/sec-student-laptop.png'
 import Teacher from './images/people/teacher.png'
+import PriPupilGroup from './images/people/pri-pupil-group.png'
 // Stickers
 import Books from './images/stickers/Books.png'
 import Bulb from './images/stickers/Bulb.png'
@@ -24,7 +25,9 @@ import Discipline from './images/stickers/discipline.png'
 import FacilityArrow from './images/stickers/facility-arrow.png'
 import LeaderShip from './images/stickers/leadership.png'
 import TeacherArrow from './images/stickers/teacher-arrow.png'
+import BallFlag from './images/stickers/ballFlag.png'
+import Stationary from './images/stickers/stationary.png'
 
 export {
-    LogoBlue, LogoBlueBg, Hero1, Hero2, Hero3, Hero4, Hero5, HeroGradientBg, Facility, SecStudentLaptop, Teacher, Books, Bulb, Calculator, Globe, AcademicCompetence, Discipline, FacilityArrow, LeaderShip, TeacherArrow
+    LogoBlue, LogoBlueBg, Hero1, Hero2, Hero3, Hero4, Hero5, HeroGradientBg, Facility, SecStudentLaptop, Teacher, PriPupilGroup, Books, Bulb, Calculator, Globe, AcademicCompetence, Discipline, FacilityArrow, LeaderShip, TeacherArrow, BallFlag, Stationary
 }

@@ -1,4 +1,4 @@
-import { Layout, Metrics, OurValue, Slider, WhyChooseUs, TeachersAndFacilities, CallToAction, ParentsReview, StudentReview, BlogList } from '@/components'
+import { Layout, Metrics, OurValue, Slider, WhyChooseUs, TeachersAndFacilities, ParentsReview, StudentReview, BlogList, CallToAction } from '@/components'
 
 export default function Home() {
   return (

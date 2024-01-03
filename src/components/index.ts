@@ -1,7 +1,6 @@
-import { Slider, OurValue, WhyChooseUs, Metrics, TeachersAndFacilities, ParentsReview, StudentReview, BlogList, CallToAction } from './home'
 import { Layout } from './layout'
-import Footer from './Footer'
-import UpcomingEvents from './UpcomingEvents'
+import { CallToAction, Footer, OurValue, UpcomingEvents } from './common'
+import { Slider, WhyChooseUs, Metrics, TeachersAndFacilities, ParentsReview, StudentReview, BlogList } from './home'
 
 
 export { Slider, OurValue, WhyChooseUs, Layout, Metrics, TeachersAndFacilities, ParentsReview, StudentReview, BlogList, UpcomingEvents, CallToAction, Footer }

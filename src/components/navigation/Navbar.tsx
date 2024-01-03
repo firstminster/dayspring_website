@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import React from 'react'
 import StdImage from '../atom/StdImage'
 import { FaArrowRight } from "react-icons/fa";
 
