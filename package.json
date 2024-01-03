@@ -15,9 +15,11 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
+    "react-photo-album": "^2.3.0",
     "react-slick": "^0.29.0",
     "sass": "^1.69.7",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "yet-another-react-lightbox": "^3.15.6"
   },
   "devDependencies": {
     "@types/node": "^20",

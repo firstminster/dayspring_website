@@ -20,6 +20,22 @@ import Facility from './images/people/facility.png'
 import SecStudentLaptop from './images/people/sec-student-laptop.png'
 import Teacher from './images/people/teacher.png'
 import PriPupilGroup from './images/people/pri-pupil-group.png'
+import GalleryHeroSec from './images/people/galleryHeroSec3.jpeg'
+// Gallery
+import ChemLab from './images/gallery/chemLab.jpeg'
+import LibrarySec1 from './images/gallery/library-sec1.jpg'
+import LibrarySec2 from './images/gallery/library-sec2.jpeg'
+import NurseryGraduants from './images/gallery/nursery-graduants2022:2023.jpeg'
+import PrimaryGraduants from './images/gallery/primary-graduants2022:2023.jpeg'
+import SecondaryGraduants from './images/gallery/secondary-graduants2022:2023.jpeg'
+import PhyLab from './images/gallery/phyLab.jpeg'
+import PresentationCompLab from './images/gallery/presentation-comp-lab.jpeg'
+import PresentationCompLab2 from './images/gallery/teacher-comp-lab.jpeg'
+import PriPupil2 from './images/gallery/pri-pupil2.jpeg'
+import SeniorSec1 from './images/gallery/senior-sec1.jpeg'
+import SmilingSecStudents from './images/gallery/smiling-sec-students.png'
+import StudentWithKidney from './images/gallery/student-with-kidney.png'
+
 // Stickers
 import Books from './images/stickers/Books.png'
 import Bulb from './images/stickers/Bulb.png'
@@ -32,7 +48,9 @@ import LeaderShip from './images/stickers/leadership.png'
 import TeacherArrow from './images/stickers/teacher-arrow.png'
 import BallFlag from './images/stickers/ballFlag.png'
 import Stationary from './images/stickers/stationary.png'
+import SchoolBag from './images/stickers/schoolBag.png'
+import Ruler from './images/stickers/ruler.png'
 
 export {
-    LogoBlue, LogoBlueBg, Team1, Team2, Team3, Team4, Hero1, Hero2, Hero3, Hero4, Hero5, HeroGradientBg, Facility, SecStudentLaptop, Teacher, PriPupilGroup, Books, Bulb, Calculator, Globe, AcademicCompetence, Discipline, FacilityArrow, LeaderShip, TeacherArrow, BallFlag, Stationary
+    LogoBlue, LogoBlueBg, Team1, Team2, Team3, Team4, Hero1, Hero2, Hero3, Hero4, Hero5, HeroGradientBg, Facility, SecStudentLaptop, Teacher, PriPupilGroup, GalleryHeroSec, ChemLab, LibrarySec1, LibrarySec2, NurseryGraduants, PrimaryGraduants, SecondaryGraduants, PhyLab, PresentationCompLab, PresentationCompLab2, PriPupil2, SeniorSec1, SmilingSecStudents, StudentWithKidney, Books, Bulb, Calculator, Globe, AcademicCompetence, Discipline, FacilityArrow, LeaderShip, TeacherArrow, BallFlag, Stationary, SchoolBag, Ruler
 }

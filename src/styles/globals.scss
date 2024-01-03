@@ -12,6 +12,11 @@
 // font-awesome
 @import "@/../../node_modules/font-awesome/css/font-awesome.min.css";
 
+/* Lightbox plugins */
+@import "yet-another-react-lightbox/styles.css";
+@import "yet-another-react-lightbox/plugins/thumbnails.css";
+@import "yet-another-react-lightbox/plugins/captions.css";
+
 *,
 body {
   box-sizing: border-box;
