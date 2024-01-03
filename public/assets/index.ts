@@ -1,6 +1,7 @@
 
 // Logo
 import LogoBlue from './images/logo/dayspring-logo-blue.png'
+import LogoBlueBg from './images/logo/dayspring-logo-blue-bg.png'
 // Hero
 import Hero1 from './images/hero/Hero1.png'
 import Hero2 from './images/hero/Hero2.png'
@@ -25,5 +26,5 @@ import LeaderShip from './images/stickers/leadership.png'
 import TeacherArrow from './images/stickers/teacher-arrow.png'
 
 export {
-    LogoBlue, Hero1, Hero2, Hero3, Hero4, Hero5, HeroGradientBg, Facility, SecStudentLaptop, Teacher, Books, Bulb, Calculator, Globe, AcademicCompetence, Discipline, FacilityArrow, LeaderShip, TeacherArrow
+    LogoBlue, LogoBlueBg, Hero1, Hero2, Hero3, Hero4, Hero5, HeroGradientBg, Facility, SecStudentLaptop, Teacher, Books, Bulb, Calculator, Globe, AcademicCompetence, Discipline, FacilityArrow, LeaderShip, TeacherArrow
 }

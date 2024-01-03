@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Meta } from "./Meta";
 import Navbar from "../navigation/Navbar";
+import { Footer } from "..";
 
 
 interface Props extends MetaProps {
@@ -23,6 +24,7 @@ const Layout: FC<Props> = ({
             <div className="">
                 {children}
             </div>
+            <Footer />
         </div>
     )
 }
