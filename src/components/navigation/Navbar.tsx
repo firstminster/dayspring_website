@@ -1,8 +1,17 @@
 import Link from 'next/link'
 import StdImage from '../atom/StdImage'
 import { FaArrowRight } from "react-icons/fa";
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+    const router = useRouter()
+
+    console.log(router);
+
+    const isActive = (href: string) => router.pathname === href;
+
+    console.log(isActive);
+
     return (
         <div id="myHeader" className="bg-white px-2 sm:px-4 py-2.5 sticky h-[75px] lg:h-[95px] w-full z-20 top-0 left-0 shadow-sm">
             <div className="w-full container flex flex-wrap justify-between items-center mx-auto">
@@ -35,27 +44,24 @@ const Navbar = () => {
                 </div>
                 <div className="justify-between items-center w-full xl:flex md:w-auto md:order-1">
                     <ul className={`nav-menu`}>
-                        <li>
-                            <Link href="/"
-                            >
+                        <li className=''>
+                            <Link href="/" className={isActive('/') ? 'active-navlink' : 'hover-navlink'}>
                                 Home
                             </Link>
                         </li>
-                        <li className="">
-                            <Link href="/about"
-                            >
+                        <li className='hover-navlink'>
+                            <Link href="/about" className={isActive('/about') ? 'active-navlink' : 'hover-navlink'}>
                                 About
                             </Link>
                         </li>
-                        <li className="">
-                            <Link href="/gallery"
-                            >
+                        <li className='hover-navlink'>
+                            <Link href="/gallery" className={isActive('/gallery') ? 'active-navlink' : 'hover-navlink'}>
                                 Gallery
                             </Link>
                         </li>
-                        <li>
+                        <li className='hover-navlink'>
                             <Link
-                                href="/contact">
+                                href="/contact" className={isActive('/contact') ? 'active-navlink' : 'hover-navlink'}>
                                 Contact Us
                             </Link>
                         </li>
