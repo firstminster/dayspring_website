@@ -14,7 +14,7 @@ const DropdownItems = [
     {
         _id: 2,
         title: "Upcoming Events",
-        path: "/about",
+        path: "/",
         icon: MdOutlineEventAvailable,
     },
 ];
