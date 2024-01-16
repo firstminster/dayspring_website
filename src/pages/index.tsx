@@ -2,7 +2,7 @@ import { Layout, Metrics, OurValue, Slider, WhyChooseUs, TeachersAndFacilities, 
 
 export default function Home() {
   return (
-    <Layout title={'Dayspring Home | Dayspring EduTech platform'} keywords={'Dayspring, Home'} description={'Welcome to Dayspring'}>
+    <Layout title={'Dayspring Home | Dayspring Academy official website'} keywords={'Dayspring, Home, EduTech, School, Aba, Abia state, Nigeria'} description={'Welcome to Dayspring Academy'}>
       <>
         <div className="relative">
           <Slider />
