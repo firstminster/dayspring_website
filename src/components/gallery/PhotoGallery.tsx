@@ -1,5 +1,4 @@
-import React from "react";
-
+import { useState } from "react";
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 // import optional lightbox plugins
@@ -8,9 +7,10 @@ import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Captions from "yet-another-react-lightbox/plugins/captions";
+// import NextJsImage from "../atom/NextJsImage";
 
 const PhotoGallery = ({ slides }: any) => {
-    const [index, setIndex] = React.useState(-1);
+    const [index, setIndex] = useState(-1);
 
     return (
         <section className="container mx-auto mt-[100px] lg:mt-[48px] px-8">
@@ -24,10 +24,13 @@ const PhotoGallery = ({ slides }: any) => {
                 layout="rows"
                 photos={slides}
                 targetRowHeight={250}
-                caption={Captions}
+                // renderPhoto={NextJsImage}
+                // defaultContainerWidth={1200}
+                // sizes={{ size: "calc(100vw - 240px)" }}
+                // caption={Captions}
                 onClick={({ index }) => setIndex(index)}
-                className="rounded-xl  "
-                style={{ borderRadius: 30 }}
+            // className="rounded-xl  "
+            // style={{ borderRadius: 30 }}
             />
 
             {/* react-spring-lightbox */}

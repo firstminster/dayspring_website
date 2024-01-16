@@ -6,6 +6,7 @@ const breakpoints = [4320, 2160, 1080, 640, 384, 256, 128];
 const unsplashPhotos = [
     {
         src: PresentationCompLab,
+        // src: '../public/assets/images/gallery/presentation-comp-lab.jpeg',
         alt: "Computer Lab",
         title: "Computer Lab",
         width: 379,

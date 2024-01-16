@@ -1,7 +1,7 @@
 import { CallToAction, Layout, OurMission, OurValue, Team } from '@/components'
 import { HeaderIntro } from '@/components/common'
 import React from 'react'
-import { BallFlag, PriPupilGroup, Stationary } from '../../../public/assets'
+import { BallFlag, PriPupilGroup, Stationary } from '../../public/assets'
 
 const AboutPage = () => {
     return (

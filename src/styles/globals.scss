@@ -29,12 +29,25 @@ body {
   @apply h-[390px] w-[183px] lg:h-auto lg:w-auto lg:static lg:flex flex-col p-4 mt-4 z-30 bg-white rounded-b-[10px] border border-gray-100 lg:flex-row space-y-[22px] lg:space-y-0 lg:space-x-9 md:mt-0 text-lg lg:text-[15px] xl:text-lg md:font-normal lg:border-0 lg:bg-transparent absolute -right-52 hidden top-[59px] md:top-[75px] transition-all duration-500 ease-in-out;
 }
 
+.nav-menu.active {
+  @apply right-0 flex transition-all duration-100 ease-in-out;
+}
+
 .active-navlink {
   @apply text-blue-primary transition-all duration-500 ease-in-out;
 }
 
 .hover-navlink {
   @apply hover:text-blue-primary transition-all duration-500 ease-in-out;
+}
+
+/* Dropdown menu */
+.menu {
+  @apply absolute top-[100px] bg-white border border-gray-100 px-5 pt-5 rounded-[10px] shadow-sm -translate-y-6 opacity-0 invisible transition-all duration-500 ease-in-out;
+}
+
+.menu.active {
+  @apply opacity-100 lg:visible translate-y-0;
 }
 
 /* CSS Document */

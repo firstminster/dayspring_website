@@ -1,16 +1,16 @@
 import { CallToAction, Layout, PhotoGallery } from '@/components'
 import { HeaderIntro } from '@/components/common'
 import React from 'react'
-import { GalleryHeroSec, Ruler, SchoolBag } from '../../../public/assets'
-import { slides } from '../../../data/photos'
+import { GalleryHeroSec, Ruler, SchoolBag } from '../../public/assets'
+import { slides } from '../../data/photos'
 
 const GalleryPage = () => {
     return (
         <Layout title={'Dayspring Gallery | Dayspring EduTech platform'} keywords={'Dayspring, Gallery'} description={'Take a walk through this visual representation of some of our school activities and facilities.'}>
             <div>
-                <HeaderIntro title={"About Us"}
+                <HeaderIntro title={"Gallery"}
                     leadText={
-                        " We are raising the next generation of leaders who will go on to change the world with the love of God firmly rooted in their hearts."
+                        "Take a walk through this visual representation of some of our school activities and facilities."
                     }
                     imgSrc={GalleryHeroSec}
                     imgAlt={"about-us-header"}

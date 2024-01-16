@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.19.2",
     "font-awesome": "^4.7.0",
+    "framer-motion": "^10.18.0",
     "next": "14.0.4",
     "react": "^18",
     "react-countup": "^6.5.0",
     "react-dom": "^18",
+    "react-hook-form": "^7.49.3",
     "react-icons": "^4.12.0",
     "react-photo-album": "^2.3.0",
     "react-slick": "^0.29.0",

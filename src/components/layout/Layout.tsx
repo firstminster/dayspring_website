@@ -2,6 +2,7 @@ import { FC } from "react";
 import { Meta } from "./Meta";
 import Navbar from "../navigation/Navbar";
 import { Footer } from "..";
+import { motion } from 'framer-motion'
 
 
 interface Props extends MetaProps {
@@ -18,14 +19,14 @@ const Layout: FC<Props> = ({
     description,
 }) => {
     return (
-        <div>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }}>
             <Meta title={title} keywords={keywords} description={description} />
             <Navbar />
             <div className="">
                 {children}
             </div>
             <Footer />
-        </div>
+        </motion.div>
     )
 }
 
